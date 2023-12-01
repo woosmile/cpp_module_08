@@ -1,11 +1,15 @@
 #include <iostream>
 #include <vector>
+#include <deque>
+#include <list>
 #include "easyfind.hpp"
 
 int main(void)
 {
-	std::vector<int> vec;
-	
+	std::vector<int>	vec;
+	// std::deque<int>		deq;
+	// std::list<int>		list;
+
 	for (int i = 0; i < 10; ++i)
 		vec.push_back(i);
 
