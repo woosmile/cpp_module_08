@@ -2,17 +2,19 @@
 # define EASYFIND_HPP
 
 # include <algorithm>
+# include <iterator>
 
 template <typename T>
-bool	easyfind(T &container, int val)
+typename T::iterator	easyfind(T &container, int val)
 {
-	typename T::iterator	last;
+	typename T::iterator	find;
 
-	last = std::find(container.begin(), container.end(), val);
+	find = std::find(container.begin(), container.end(), val);
 
-	if (last == container.end())
-		return (1);
-	return (0);
+	if (find == container.end())
+		throw (std::invalid_argument("value not found"));
+	else
+		return (find);
 }
 
 #endif
