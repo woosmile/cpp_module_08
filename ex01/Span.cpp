@@ -34,12 +34,12 @@ void	Span::addNumber(const int num)
 		throw (Span::FullElement());
 }
 
-void	Span::addNumber(const std::deque<int> val)
+void	Span::addNumber(const std::deque<int> new_deq)
 {
-	if (_deq.size() + val.size() <= _n)
+	if (_deq.size() + new_deq.size() <= _n)
 	{
-		std::deque<int>::iterator	_deq_it = _deq.end();
-		_deq.insert(_deq_it, val.begin(), val.end());
+		std::deque<int>::iterator _deq_it_end = _deq.end();
+		_deq.insert(_deq_it_end, new_deq.begin(), new_deq.end());
 	}
 	else
 		throw (Span::FullElement());
