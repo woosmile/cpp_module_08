@@ -88,20 +88,8 @@ int main()
 		my_own_mstack.push(i);
 	}
 
-	std::cout << "-----my own test : cbegin, cend-----" << std::endl;
-	for (MutantStack<int>::const_iterator it_my = my_own_mstack.cbegin(); it_my != my_own_mstack.cend(); it_my++)
-	{
-		std::cout << *it_my << std::endl;
-	}
-
 	std::cout << "-----my own test : rbegin, rend-----" << std::endl;
 	for (MutantStack<int>::reverse_iterator it_my = my_own_mstack.rbegin(); it_my != my_own_mstack.rend(); it_my++)
-	{
-		std::cout << *it_my << std::endl;
-	}
-
-	std::cout << "-----my own test : crbegin, crend-----" << std::endl;
-	for (MutantStack<int>::const_reverse_iterator it_my = my_own_mstack.crbegin(); it_my != my_own_mstack.crend(); it_my++)
 	{
 		std::cout << *it_my << std::endl;
 	}

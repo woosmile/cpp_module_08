@@ -18,8 +18,6 @@ class MutantStack : public std::stack<T>
 		typedef typename MutantStack<T>::stack::container_type::const_iterator const_iterator;
 		const_iterator begin() const;
 		const_iterator end() const;
-		const_iterator cbegin() const;
-		const_iterator cend() const;
 
 		typedef typename MutantStack<T>::stack::container_type::reverse_iterator reverse_iterator;
 		reverse_iterator rbegin();
@@ -27,8 +25,6 @@ class MutantStack : public std::stack<T>
 		typedef typename MutantStack<T>::stack::container_type::const_reverse_iterator const_reverse_iterator;
 		const_reverse_iterator rbegin() const;
 		const_reverse_iterator rend() const;
-		const_reverse_iterator crbegin() const;
-		const_reverse_iterator crend() const;
 };
 
 # include "MutantStack.tpp"
