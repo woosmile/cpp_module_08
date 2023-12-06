@@ -58,8 +58,8 @@ unsigned int	Span::shortestSpan() const
 		it++;
 		for (; it != sort.end() - 1; it++)
 		{
-			if (short_span > static_cast<unsigned int>(std::abs(*(it + 1) - *it)))
-				short_span = static_cast<unsigned int>(std::abs(*(it + 1) - *it));
+			if (short_span > static_cast<unsigned int>(std::abs(static_cast<long long>(*(it + 1)) - static_cast<long long>(*it))))
+				short_span = static_cast<unsigned int>(std::abs(static_cast<long long>(*(it + 1)) - static_cast<long long>(*it)));
 		}
 	}
 	else
@@ -75,7 +75,7 @@ unsigned int	Span::longestSpan() const
 	{
 		std::deque<int> sort = _deq;
 		std::sort(sort.begin(), sort.end());
-		long_span = static_cast<unsigned int>(std::abs(*sort.rbegin() - *sort.begin()));
+		long_span = static_cast<unsigned int>(std::abs(static_cast<long long>(*sort.rbegin()) - static_cast<long long>(*sort.begin())));
 	}
 	else
 		throw (Span::SpanNotFound());
