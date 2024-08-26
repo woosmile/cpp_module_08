@@ -15,4 +15,4 @@
 
 ### ex02
 - stack 컨테이너를 상속받아 어떤 자료형이든 담을 수 있는 MutantStack 클래스 구현
-- iterator 별로 다른 반환형으로 begin, rbegin, end, rend를 함수를 호출함
+- iterator 별로 다른 반환형으로 begin, rbegin, end, rend를 함수를 호출함
