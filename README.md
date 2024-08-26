@@ -4,7 +4,7 @@
 - Templated Container
 - Iterator 사용 방법
 
-## 구현 내용
+## 과제 내용
 
 ### ex00
 - std::find로 컨테이너에서 특정 값을 찾음
