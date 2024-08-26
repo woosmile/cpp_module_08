@@ -1,7 +1,8 @@
 # CPP Module 08
 
 ## 학습 내용
-- C++ Container
+- Templated Container
+- Iterator 사용 방법
 
 ## 구현 내용
 
